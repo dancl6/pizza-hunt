@@ -8,9 +8,11 @@ const ReplySchema = new Schema(
         default: () => new Types.ObjectId()
       },
       replyBody: {
+        required: 'You need to provide a reply body!',
         type: String
       },
       writtenBy: {
+        required: 'You need to provide who it was written by!',
         type: String
       },
       createdAt: {
@@ -29,9 +31,11 @@ const ReplySchema = new Schema(
   const CommentSchema = new Schema(
     {
       writtenBy: {
+        required: 'You need to provide who it was written by!',
         type: String
       },
       commentBody: {
+        required: 'You need to provide the comment body!',
         type: String
       },
       createdAt: {
