@@ -2,18 +2,18 @@ const { Schema, model, Types } = require('mongoose');
 const moment = require('moment');
 const ReplySchema = new Schema(
     {
-      // set custom id to avoid confusion with parent comment's _id field
-      replyId: {
+    // set custom id to avoid confusion with parent comment _id
+    replyId: {
         type: Schema.Types.ObjectId,
         default: () => new Types.ObjectId()
       },
       replyBody: {
-        required: 'You need to provide a reply body!',
-        type: String
+        type: String,
+        required: true
       },
       writtenBy: {
-        required: 'You need to provide who it was written by!',
-        type: String
+        type: String,
+        required: true,
       },
       createdAt: {
         type: Date,

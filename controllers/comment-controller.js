@@ -5,7 +5,7 @@ const commentController = {
   // add comment to pizza
   addComment({ params, body }, res) {
     console.log(body);
-    Comment.create(body,{runValidators: true })
+    Comment.create(body)
       .then(({ _id }) => {
         return Pizza.findOneAndUpdate(
           { _id: params.pizzaId },
