@@ -46,6 +46,6 @@ N/A
 
 ## Questions
 
-[User Git Hub Link](https://github.com/https://github.com/dancl6/pizza-hunt/ )
+[User Git Hub Link](https://github.com/dancl6/pizza-hunt/ )
 
 User Email: danielclyons@yahoo.com
